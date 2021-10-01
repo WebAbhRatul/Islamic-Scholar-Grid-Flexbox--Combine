@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        video{
+            height: 181px;
+            width: 181px;
+        }
+        h2,p,h3{
+            margin: 0;
+            padding: 0;
+        }
+        .scholars{
+            width: 300px;
+            text-align: center;
+
+            border-radius: 15px;
+            overflow: hidden;
+            height: 400px;
+            box-sizing: border-box;
+            background-color: greenyellow;
+            
+        }
+        .photo img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .details{
+            
+        }
+        .hover_details{
+            display: none;
+            background-color: greenyellow;
+        }
+        .scholars:hover .details{
+            display: none;
+        }
+        .scholars:hover .hover_details h2{
+            margin-top: 30px;
+            transition: margin-top -.01s ease-out;
+           
+        }
+        .scholars:hover .photo{
+            transform: scale(1.3);
+            transition: transform .7s ease-in;
+        }
+        .scholars:hover .hover_details{
+            display: block;
+            
+        }
+        input,textarea{
+            width: 70%;
+            margin: 5px;
+            border-radius: 10px;
+            border: 1px solid rgba(199, 195, 195, 0.603);
+            text-align: center;
+            
+        }
+        input:focus,textarea:focus{
+            outline:none;
+            border-color: turquoise;
+            
+        }
+        textarea{
+            height: 30px;
+        }
+
+        .p{
+            margin-top: 30px;
+        }
+        .q{
+            margin-bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="scholars">
+        <div class="photo">
+            <img src="img/scholars/zakir-neik.jpg" alt="">
+        </div>
+        <div class="details">
+            <h2 class="p q">Zakir Nayek</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam, in autem, magnam cumque ad eum nesciunt, similique inventore veritatis itaque exercitationem quidem numquam quibusdam blanditiis odio voluptates adipisci totam.</p>
+        </div>
+        <div class="hover_details">
+            <h2 class="p ">Zakir Nayek</h2>
+            <h3>Contact:</h3>
+            <div>
+                <form action="">
+                    <p><input type="text" name="" placeholder="Enter your name" id=""></p>
+                  <p>  <input type="email" name="" placeholder="Enter your email" id=""></p>
+                   <p> <textarea name="" id="" cols="5" rows="5" placeholder="Enter your message"></textarea></p>
+                   <input type="button" value="Submit">
+                </form>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+   
+</body>
+</html>
